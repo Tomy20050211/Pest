@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins" , sans-serif;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+   
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 8%; 
+    background-color:rgba(3, 3, 3, 0.85); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 1000;
+}
+
+.logo{
+    font-size:2.5rem;
+    font-weight: bold;
+    color: darkred;
+}
+
+nav a{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+    color: darkred;
+    border-bottom: 2px solid darkred;
+}
+
+main{
+    padding: 6rem 8%;
+}
+
+section{
+    padding: 6rem 85;
+    min-height: 100vh;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.home-content{
+    flex: 1 1 50%;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.home h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home h3{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: darkred;
+}
+
+.gif{
+    flex: 1 1 30%;
+    text-align: center;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.gif img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; 
+    box-shadow: 0 0 20px darkred;
+    transition: transform 0.3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+}
+
+
+

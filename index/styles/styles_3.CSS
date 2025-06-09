@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins" , sans-serif;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 8%; 
+    background-color: rgba(3, 3, 3, 0.85); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    z-index: 1000; 
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: darkred;
+}
+
+nav a{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    color:white;
+    transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active{
+    color: darkred;
+    border-bottom: 2px solid darkred;
+}
+
+main{
+    padding-top: 8rem;
+}
+
+section{
+    padding: 6rem 8%;
+    min-height: 100vh;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    font-size: 1.6rem;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+}
+
+.skills{
+    flex: 1 1 30%;
+    text-align: center;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.skills-list img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skills {
+    text-align: center; 
+    padding: 5rem 8%; 
+}
+
+.skills h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color:darkred; 
+    font-weight: 700;
+}
+
+.skills-list {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 3rem; 
+    justify-items: center; 
+    align-items: center;
+}
+.skill {
+    text-align: center; 
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #111;
+    transition: transform 0.3s ease; 
+}
+
+.skill img{
+    width: 100px;
+    height: 100px; 
+    object-fit: contain; 
+    margin-bottom: 1rem; 
+    transition: transform 0.3s ease; 
+}
+
+.skill p {
+    font-size: 1.6rem;
+    color: white; 
+    font-weight: 600;
+}
+
+.skill:hover {
+    transform: scale(1.1); 
+    background-color:darkred; 
+}
+
+.skill:hover img {
+    transform: scale(1.1); /
+}
+
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2.5rem; /
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    }
+}
+
+.gif3{
+    margin-top: 100px;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill{
+    flex: 1 1 30%;
+    text-align: center;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+}
+
+
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2.5rem; 
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    }
+}
